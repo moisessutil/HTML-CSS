@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em diferentes dispositivos <br>
+    ou aumente ou diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequeno.png" sizes="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/medio.png" sizes="image/png">
+        <img src="imagens/grande.png" alt="img flx">
+    </picture>
+    <audio src="midia/Streets Of Punjab - Hanu Dixit.mp3" controls></audio>
+    <audio src="midia/guanacast-33.mp3" controls></audio>
+    <audio controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelismente o seu navegador não suporta audios. <br>
+        <a href="midia/guanacast-33.mp3">Clique aqui para fazer o dowload em mp3</a>.</p>
+    </audio>
+</body>
+</html>
